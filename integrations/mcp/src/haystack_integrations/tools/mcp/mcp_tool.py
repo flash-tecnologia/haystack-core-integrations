@@ -495,7 +495,7 @@ class StreamableHttpClient(MCPClient):
             )
             raise MCPConnectionError(message=message, operation="streamable_http_connect")
 
-        headers = {"Authorization": f"Bearer {self.token}"} if self.token else None
+        headers = self.token if self.token else None
         streamablehttp_transport = await self.exit_stack.enter_async_context(
             streamablehttp_client(url=self.url, headers=headers, timeout=timedelta(seconds=self.timeout))
         )
