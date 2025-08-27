@@ -3,7 +3,7 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mcp-haystack"
+name = "dataflash-mcp-haystack"
 dynamic = ["version"]
 description = "Haystack integration for Model Context Protocol (MCP)"
 readme = "README.md"
