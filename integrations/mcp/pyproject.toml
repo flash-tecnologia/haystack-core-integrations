@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dataflash-mcp-haystack"
-version = "0.1.0"
+version = "0.1.1"
 description = "Haystack integration for Model Context Protocol (MCP)"
 readme = "README.md"
 requires-python = ">=3.10"
